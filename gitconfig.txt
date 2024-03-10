@@ -1,0 +1,72 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = ../../../../../../../../time/2024/03/07/openxla
+[remote "origin"]
+	url = https://github.com/openxla/xla
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	gh-resolved = base
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[remote "wozna"]
+	url = https://github.com/wozna/xla
+	fetch = +refs/heads/*:refs/remotes/wozna/*
+[remote "andportnoy"]
+	url = https://github.com/andportnoy/xla
+	fetch = +refs/heads/*:refs/remotes/andportnoy/*
+[remote "dimvar"]
+	url = https://github.com/dimvar/xla
+	fetch = +refs/heads/*:refs/remotes/dimvar/*
+[remote "inailuig"]
+	url = https://github.com/inailuig/xla
+	fetch = +refs/heads/*:refs/remotes/inailuig/*
+[remote "Intel-tensorflow"]
+	url = https://github.com/Intel-tensorflow/xla
+	fetch = +refs/heads/*:refs/remotes/Intel-tensorflow/*
+[remote "jaro-sevcik"]
+	url = https://github.com/jaro-sevcik/xla
+	fetch = +refs/heads/*:refs/remotes/jaro-sevcik/*
+[remote "jeffhataws"]
+	url = https://github.com/jeffhataws/openxla
+	fetch = +refs/heads/*:refs/remotes/jeffhataws/*
+[remote "jyingl3"]
+	url = https://github.com/jyingl3/xla
+	fetch = +refs/heads/*:refs/remotes/jyingl3/*
+[remote "kaixih"]
+	url = https://github.com/kaixih/xla
+	fetch = +refs/heads/*:refs/remotes/kaixih/*
+[remote "ManfeiBai"]
+	url = https://github.com/ManfeiBai/OpenXLA
+	fetch = +refs/heads/*:refs/remotes/ManfeiBai/*
+[remote "olupton"]
+	url = https://github.com/olupton/xla
+	fetch = +refs/heads/*:refs/remotes/olupton/*
+[remote "openxla"]
+	url = https://github.com/openxla/xla
+	fetch = +refs/heads/*:refs/remotes/openxla/*
+[remote "pearu"]
+	url = https://github.com/pearu/xla
+	fetch = +refs/heads/*:refs/remotes/pearu/*
+[remote "philipphack"]
+	url = https://github.com/philipphack/xla
+	fetch = +refs/heads/*:refs/remotes/philipphack/*
+[remote "ROCm"]
+	url = https://github.com/ROCm/xla
+	fetch = +refs/heads/*:refs/remotes/ROCm/*
+[remote "shraiysh"]
+	url = https://github.com/shraiysh/xla
+	fetch = +refs/heads/*:refs/remotes/shraiysh/*
+[remote "Tixxx"]
+	url = https://github.com/Tixxx/xla
+	fetch = +refs/heads/*:refs/remotes/Tixxx/*
+[remote "trevor-m"]
+	url = https://github.com/trevor-m/xla
+	fetch = +refs/heads/*:refs/remotes/trevor-m/*
+[remote "mi"]
+	url = https://github.com/meta-introspector/open-xla
+	fetch = +refs/heads/*:refs/remotes/mi/*
+[pull]
+	rebase = true
