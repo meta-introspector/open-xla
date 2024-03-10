@@ -1,0 +1,991 @@
+10391	Update XLA visibility for Enzyme	test_614073447	OPEN
+10390	Split FP8 And Non-FP8 GEMM Rewriters	philipphack:u_fp8_rewriter_split_xla	OPEN
+10389	[NVIDIA] Enable autotune of Cublaslt Fp8 Gemm	kaixih:autotune_fp8	OPEN
+10387	[test] post-submit	ManfeiBai:patch-1	OPEN
+10386	Validate output to operand aliasing field.	test_614059233	OPEN
+10385	[XLA] Don't rewrite layouts for async calls	test_612897013	OPEN
+10384	Always propagate shardings along the batch dimension in `InferConvolutionShardingFromOperands`.	test_614049496	OPEN
+10383	Remove tensorflow/third_party/mkl/{BUILD,build_defs.bzl} and replace with direct usage of TSL targets	test_614043969	OPEN
+10382	Change access to elsize attribute for NumPy 2.0 compatibility	test_613996675	OPEN
+10380	[XLA:Python] Port pmap to nanobind.	test_614009440	OPEN
+10379	[XLA:Python] Port pjit to nanobind.	test_613936554	OPEN
+10377	Remove unused portions of stream_executor::DeviceOptions.	test_613971152	OPEN
+10376	Fix expm1 inaccuracies on complex inputs with small absolute values. Add Cosm1.	pearu:pearu/expm1	OPEN
+10375	[xla:cpu] Remove support for sparse shapes	test_613887932	OPEN
+10374	[GPU] Enable cuDNN GEMM fusions only with cuDNN 9+.	check_cudnn_version	OPEN
+10373	[XLA:Python] Port jax_jit module to nanobind.	test_613931804	OPEN
+10372	[GPU] Change cuDNN GEMM fusion flag type to an integer.	cudnn_fusion_level	OPEN
+10371	[ROCm] Add Reshape and Convert mover hlo passes to AMDGPU compiler	ROCm:ci_reshapemover_20240308	OPEN
+10370	Update TFRT dependency to use revision	test_613926035	OPEN
+10368	Add sparse dot op support in dot_dimension_sorter pass	test_613905821	OPEN
+10367	Add sparse dot op support in dot_dimension_merger pass	test_613903067	OPEN
+10366	Add sparse dot op support in dot_decomposer pass	test_613898739	OPEN
+10364	Add sparse dot op support in dot_merger pass	test_613890584	OPEN
+10356	Integrate LLVM at llvm/llvm-project@3a56b5a27d71	test_613796999	OPEN
+10355	Lower memory_kind on inputs/outputs to `mhlo.memory_kind` and then translate that to entry_computation_layout attached to HLO.	test_606414264	OPEN
+10353	Permit `i4` arguments in XLA `while` ops.	test_612976140	OPEN
+10352	Add method GetUniqueValuePtr() in HloValue and HloValueSet.	test_609843835	OPEN
+10351	[XLA:GPU] Make CublasRequiresPadding work on vectors	test_613734004	OPEN
+10349	#tf-data makes data_service_client.cc nonblocking when getting elements from workers	test_611610441	OPEN
+10348	[PJRT] Add hashing, equality checking, and pickling to PjRtLayout.	test_588611675	OPEN
+10347	Integrate LLVM at llvm/llvm-project@a213df5d3895	test_613724795	OPEN
+10346	Delete seemingly unused shape_component_analysis pass	test_613717251	OPEN
+10345	Add a TODO to explain why MHLO_Tensor does not alias HLO_Tensor	test_613710303	OPEN
+10344	[XLA:CPU] Enable BMM+Mul+Add fusion	Intel-tensorflow:kanvi/bmm+mul+add	OPEN
+10337	[ROCm] Add CudnnPadForConvolutions and CudnnVecotrizeConvolutions HLO pass to AMDGPU compiler	ROCm:ci_pad_vec_conv_20240307	OPEN
+10335	Integrate LLVM at llvm/llvm-project@a213df5d3895	test_613608497	OPEN
+10332	[XLA:GPU] Add algorithm to PrecisionConfig	test_613560740	OPEN
+10330	PR #10315: Add move assignment operator to Shape and ProgramShape	test_613517574	OPEN
+10320	PR #9319: Avoid rewriting tiny matrices with cublas or triton	test_612752982	OPEN
+10319	[XLA] Do not fail at check when entry computation has a single tuple parameter and allow_spmd_sharding_propagation_to_parameters contains as many elements as tuple size.	test_613493707	OPEN
+10318	Add version checks to FindCudaExecutable	test_612791713	OPEN
+10317	Use hermetic Python in TSL and XLA	test_613437099	OPEN
+10316	[NVIDIA GPU] Add a mechanism in GpuAsyncTracker to force delaying scheduling of an instruction.	Tixxx:tixxx/force_delay_lhs	OPEN
+10314	Automated rollback of changelist 612998062.	test_613405548	OPEN
+10313	Integrate StableHLO at openxla/stablehlo@d978408a	test_613401256	OPEN
+10311	get param memory kinds	test_613383623	OPEN
+10310	[xla] Extend collective-pipeliner to support loop variant parameters in	test_613348077	OPEN
+10309	[xla] An operand shared by multiple backward chains should only needed to be	test_613347887	OPEN
+10308	Added support of C++20 for OSS TF for Linux platform	test_613370839	OPEN
+10306	Fixes "use of bitwise '&' with boolean operands" in the android build.	test_613351907	OPEN
+10305	Dump table config during table stacking in TF preprocessing.	test_612527749	OPEN
+10303	Test internal config	test_613326310	OPEN
+10302	Move `tsl/mkl` to `xla/tsl/mkl`	test_611200481	OPEN
+10301	[XLA:CPU][oneDNN] Convolution XLA HLO Pattern Matcher with oneDNN custom call rewrite	Intel-tensorflow:akhil/conv_fwd	OPEN
+10300	Delete the redundant compilation_cache_test	test_613312786	OPEN
+10295	[XLA:GPU] Add MLIR-based DUS emitter.	test_611474240	OPEN
+10293	Integrate Triton up to [bfb8e413](https://github.com/openai/triton/commits/bfb8e413b075583228c961bdbb65a98dc54d0868)	test_612852008	OPEN
+10291	[ROCM] fixing pmap failure on multiple gpus (forward convolution)	ROCm:ci_jax_pmap_failure_fix	OPEN
+10289	PR #9757: GpuTimer: improve kernel execution time measurement accuracy	test_613135650	OPEN
+10280	Guard the nvPTXCompilerCompile function call by a mutex	test_613126594	OPEN
+10276	Integrate LLVM at llvm/llvm-project@929ceec70578	test_613076276	OPEN
+10265	Delete copybara rule to fix XLA export after cl/612895601	test_612937582	OPEN
+10261	[ROCm] ConvBfloat16Support HLO pass for AMDGPU Compiler	ROCm:ci_convbf16norm_20240305	OPEN
+10251	Automated Code Change	test_612668176	OPEN
+10249	PR #9246: Perform elementwise BF16 math natively in platforms that support it.	test_612749014	OPEN
+10247	Add sycl name in se_gpu_pjrt_client	Intel-tensorflow:yang/pjrt	OPEN
+10244	Add sycl build target	Intel-tensorflow:yang/syclbuild	OPEN
+10238	[GPU] Add flag to monitor GPU memory usage	trevor-m:memorymonitor	OPEN
+10229	[XLA:GPU] Explicit algorithm support for dot instructions	test_612391497	OPEN
+10227	[XLA:GPU] Enable testing on H100 for `ir_emitter_triton_{parametrized_}test`.	test_612439109	OPEN
+10226	Integrate LLVM at llvm/llvm-project@c089fa5a729e	test_612423510	OPEN
+10211	[XLA:CPU][oneDNN] Update oneDNN LayerNorm and Softmax	Intel-tensorflow:onednn-update-ln	OPEN
+10185	Hook up host offloading passes on GPU	jaro-sevcik:hook-up-host-offloading-gpu	OPEN
+10182	[ROCM] fixing hipblas-lt large startup overhead	ROCm:ci_hipblas_lt_startup_overhead	OPEN
+10176	Automated Code Change	test_610951074	OPEN
+10174	Automated Code Change	test_610949946	OPEN
+10171	Skip `xla_tests` for presubmit on ARM64 CPU platform.	test_611659629	OPEN
+10165	[STACKED PR] [XLA:GPU] Compile cuDNN graphs at thunk initialization.	cudnn_compile_graphs_in_runtime	DRAFT
+10164	[XLA:CPU] Improve Trace emitter	Intel-tensorflow:sachin/tracemeupdate	OPEN
+10163	GPU Load Tracker in Pathways.	test_609446412	OPEN
+10157	Disable ConstantsHloTest.BitcastOfConstant on TPU	test_611555818	OPEN
+10156	[xla:gpu] Add runtime optimization using frontend attribute	test_611192382	OPEN
+10155	Add Collective broadcast support in XLA/CPU backend.	test_611517511	OPEN
+10139	Automated Code Change	test_610950937	OPEN
+10124	Automated Code Change	test_610948583	OPEN
+10120	Automated Code Change	test_610951072	OPEN
+10119	Automated Code Change	test_610951066	OPEN
+10116	Automated Code Change	test_610950622	OPEN
+10109	Automated Code Change	test_610950614	OPEN
+10103	Automated Code Change	test_610951081	OPEN
+10098	Mhlo to Hlo converters for dynamic_reshape and dynamic_broadcast_in_dim	test_611304903	OPEN
+10097	[ROCm] Allow host buffer allocation in GpuExecutor::Allocate	ROCm:host_alloc	OPEN
+10092	Model additional memory usage that can arise due to tensor reshardings.	test_610514061	OPEN
+10082	[ROCm] Enable GpuCommandBuffer::Trace	ROCm:cmmand_trace	OPEN
+10078	Move `tsl/concurrency` to `xla/tsl/concurrency` and update users	test_611140575	OPEN
+10077	Adding some global variables for internal tooling.	test_609900381	OPEN
+10073	Integrate LLVM at llvm/llvm-project@cb6c0f1d28c0	test_611110449	OPEN
+10066	[ROCM] rocm tracer fixes for jax profiler	ROCm:ci_profiler_fixes	OPEN
+10050	[ROCm] Don't use dsabled nodes as command buffer barriers	ROCm:cmd_barrier	OPEN
+10044	[XLA:GPU] Add an experimental multi-streaming scheduling pass	test_609114133	OPEN
+10042	Introduce API for lazily allocating buffers in ToLiteral.	test_590401735	OPEN
+10041	Integrate StableHLO at openxla/stablehlo@879f1802	test_610929263	OPEN
+10037	[NVIDIA XLA] Copy backend config for derived instruction that has same opcode	Tixxx:tixxx/derived_backend_config	OPEN
+10011	[ROCM] cuSolver API fixes 27/02/24	ROCm:ci_cusolver_fix_240227	OPEN
+9988	Move `tsl/c` to `xla/tsl/c` and update users	test_610553896	OPEN
+9981	Modify hlo_graph_dumper to accept custom hash map containing HloInstruction and its corresponding color.	test_610536020	OPEN
+9970	add a skip for old libtpu	test_610468192	OPEN
+9963	Integrate LLVM at llvm/llvm-project@47aee8b56d65	test_610435836	OPEN
+9960	Fix CUDA_ERROR_MISALIGNED_ADDRESS on layout conversions	test_610412301	OPEN
+9957	Integrate LLVM at llvm/llvm-project@cace477c0b6c	test_610387172	OPEN
+9949	Automated Code Change	test_610298426	OPEN
+9948	Integrate LLVM at llvm/llvm-project@47aee8b56d65	test_610303546	OPEN
+9947	Automated Code Change	test_609909770	OPEN
+9944	Automated Code Change	test_608458764	OPEN
+9939	[xla:cpu] Remove deprecated lhlo-tfrt-opt	test_610018582	OPEN
+9931	Automated Code Change	test_609914232	OPEN
+9928	Integrate StableHLO at openxla/stablehlo@115941b8	test_609873454	OPEN
+9918	Integrate LLVM at llvm/llvm-project@47aee8b56d65	test_609839575	OPEN
+9903	Integrate LLVM at llvm/llvm-project@1408667fdd89	test_609770203	OPEN
+9901	[jax-triton] Synchronize autotuning stream with a main one	test_609756010	OPEN
+9896	Opaque types for NVTX domain and string handles	olupton:opaque-nvtx	OPEN
+9887	Remove ABSL_DEPRECATE_AND_INLINE from TSL	test_609694539	OPEN
+9881	Automated Code Change	test_609561304	OPEN
+9873	[ROCm] Don't use CUDA PTX for ROCM in ComputationIdCmd	ROCm:comp_id	OPEN
+9871	complied memory stats	test_609611860	OPEN
+9868	Migrate Shape->MHLO legalizations to StableHLO	test_609587142	OPEN
+9866	avoid calling _status destructor by usinga thread local static status	test_609573406	OPEN
+9864	[IFRT] Introduce ifrt::Array::layout()	test_588543300	OPEN
+9863	[PJRT][IFRT] Update PJRT, IFRT, and Py executable getters to return PjRtLayouts	test_588541669	OPEN
+9861	[XLA:CPU Next] Flatten tuple shardings	test_609534058	OPEN
+9852	[xla][gpu] Avoid repeatedly running layout normalization pass	test_609509703	OPEN
+9847	PR #9840: Fix typo in configure.py	test_607642430	OPEN
+9834	Add dlpack support for XPU for JAX	wozna:dlpack_xpu_jax	OPEN
+9833	Re-enable HoistLayoutConversion pattern.	test_609333259	OPEN
+9831	Disable Tensor Cores for 8-bit x F32 dot.	test_609306332	OPEN
+9827	[ROCm] Stream executor API logging API	ROCm:ci_se_logging	OPEN
+9821	Automated Code Change	test_609190620	OPEN
+9819	Automated Code Change	test_608459007	OPEN
+9818	Automated Code Change	test_608458782	OPEN
+9816	Automated Code Change	test_608456078	OPEN
+9815	Automated Code Change	test_608463977	OPEN
+9813	Automated Code Change	test_608460632	OPEN
+9812	Automated Code Change	test_608463411	OPEN
+9810	Let XLA choose in_shardings for inputs who sharding is unspecified.	test_606071768	OPEN
+9808	Automated Code Change	test_608456911	OPEN
+9802	Integrate CHLO->StableHLO lowerings in XLA	test_609160162	OPEN
+9790	Remove copybara rule that changes XLA dir in `tsl/profiler/lib`	test_609084770	OPEN
+9778	Added flash attention with new cudnn frontend	shraiysh:flash-attn-2	OPEN
+9771	Automated Code Change	test_608461120	OPEN
+9768	Automated Code Change	test_608456055	OPEN
+9766	Automated Code Change	test_608461105	OPEN
+9765	Automated Code Change	test_608463970	OPEN
+9761	Automated Code Change	test_608463962	OPEN
+9760	Automated Code Change	test_608460367	OPEN
+9759	Automated Code Change	test_608461131	OPEN
+9758	Automated Code Change	test_608461419	OPEN
+9756	Automated Code Change	test_608460640	OPEN
+9755	Automated Code Change	test_608459025	OPEN
+9754	Automated Code Change	test_608460338	OPEN
+9751	Automated Code Change	test_608463419	OPEN
+9750	Automated Code Change	test_608461440	OPEN
+9749	Automated Code Change	test_608460642	OPEN
+9746	Automated Code Change	test_608459033	OPEN
+9745	[XLA:GPU] Fix cost analysis for variadic reduce.	test_608456921	OPEN
+9741	Automated Code Change	test_608457889	OPEN
+9738	Automated Code Change	test_608456922	OPEN
+9731	Automated Code Change	test_608461450	OPEN
+9728	Automated Code Change	test_608460639	OPEN
+9725	Automated Code Change	test_608461443	OPEN
+9724	Automated Code Change	test_608463149	OPEN
+9723	Automated Code Change	test_608862063	OPEN
+9722	Automated Code Change	test_608460339	OPEN
+9721	Automated Code Change	test_608459027	OPEN
+9719	Automated Code Change	test_608462266	OPEN
+9718	Automated Code Change	test_608463973	OPEN
+9717	Automated Code Change	test_608458758	OPEN
+9695	Use Stream::WaitFor instead of ThenWaitFor.	test_608727386	OPEN
+9691	Make IFRT proxy work with IPv4-only machines.	test_608759896	OPEN
+9688	[XLA:CPU] Add F16 support for oneDNN matmul	Intel-tensorflow:kanvi/f16_matmul	OPEN
+9666	[ROCm] Fused convolution+bias+activation	ROCm:ci_fused_conv	OPEN
+9662	Update TFRT dependency to use revision	test_607642466	OPEN
+9646	Automated Code Change	test_608464932	OPEN
+9645	Automated Code Change	test_608461843	OPEN
+9644	Automated Code Change	test_608461848	OPEN
+9610	Automated Code Change	test_608070790	OPEN
+9608	Automated Code Change	test_608070779	OPEN
+9607	Automated Code Change	test_608070772	OPEN
+9605	Automated Code Change	test_608041357	OPEN
+9595	Move scheduling metrics to tsl.	test_607799616	OPEN
+9593	[WIP] [ROCm] Moving blas::CallContext into NumericOptions	ROCm:ci_move_call_context_to_numeric_options	OPEN
+9570	[xla:gpu] Use pinned host memory as staging buffer for literal transfers	test_607507876	OPEN
+9569	Reverts c10075688d773c43c22e658c814a94ade3cbb372	test_607501798	OPEN
+9562	Making each unrolled iteration a trivial loop.	test_607010792	OPEN
+9546	Added a flag enabling Pallas kernel compilation via XLA:GPU	test_606271345	OPEN
+9539	Enable PTX compilation through libnvptxcompiler by default	test_607279901	OPEN
+9535	Automated Code Change	test_607164826	OPEN
+9531	Fp8 matmul support on AMD MI300	ROCm:ci_fp8_gemm_support	OPEN
+9526	Integrate LLVM at llvm/llvm-project@d592c8ec8f71	test_607129212	OPEN
+9516	TPU specific changes	test_537296749	OPEN
+9512	TEST 1	test_607033090	OPEN
+9508	Ensure that the algebraic simplifier does not remove reshape ops inserted by auto-sharding to facilitate resharding of tensors.	test_607013395	OPEN
+9492	[xla:gpu] Fix legacy custom call address fusion.	test_606917154	OPEN
+9491	Automated Code Change	test_605954598	OPEN
+9489	Automated Code Change	test_605954565	OPEN
+9487	Automated Code Change	test_605496970	OPEN
+9486	Automated Code Change	test_606850991	OPEN
+9463	[XProf] GPU: Provide way to disable GPU profiling CUPTI interface	test_606684846	OPEN
+9453	Automated Code Change	test_606426125	OPEN
+9442	Add support for rewriting DyanmicGte and DynamicTuple custom-calls during unrolling pass.	test_600549639	OPEN
+9439	[XLA:LatencyHidingScheduler] Add copy to the no-op instruction list so that it is scheduled as soon as it is ready.	test_606407811	OPEN
+9415	Add explicit includes for all symbols, cleanup BUILD files.	test_605652845	OPEN
+9396	Stop calling deprecated Stream methods.	test_605761216	OPEN
+9385	[xla:gpu] Enable triton_kernel_call in command buffers	test_605722620	OPEN
+9380	Move kernelgen specific passes from MHLO transforms to kernelgen transforms	test_605690178	OPEN
+9375	The "IFRT proxy" has a client-side that behaves like an IFRT backend by sends any API calls to a server-side that makes those calls to a "real" IFRT backend.	test_600844012	OPEN
+9362	Automated Code Change	test_605555903	OPEN
+9353	Use tensor.reshape instead of mhlo.dynamic_reshape in kernelgen	test_605439546	OPEN
+9352	Bufferize tensor reshape in HLO to memref	test_605476515	OPEN
+9349	No op in OSS.	test_605450681	OPEN
+9345	HloSchedule: Add insert_instruction() to HloInstructionSequence.	test_603363965	OPEN
+9343	Remove wire-through Stream::ThenTransformTensor method.	test_605048390	OPEN
+9319	Avoid rewriting tiny matrices with cublas or triton	jaro-sevcik:no-cublas-or-triton-for-small-matmuls	OPEN
+9314	Add sparse dot op support in algebraic simplifier (remove transposes)	test_605262326	OPEN
+9313	Add sparsity parameters to MakeDotHlo helper	test_605002148	OPEN
+9312	Add sparse dot op support in algebraic simplifier (slice dot operands)	test_605249699	OPEN
+9309	Add sparse dot op support in algebraic simplifier (remove degenerate dimensions)	test_605246673	OPEN
+9308	Automated Code Change	test_604841730	OPEN
+9306	Automated Code Change	test_604841722	OPEN
+9284	Addressing TF query analysis errors for @local_tsl repository	test_604756965	OPEN
+9280	[XLA] Revert "Propagate side effects for async ops"	test_604939860	OPEN
+9275	[xla:cpu] Exclude //third_party/tensorflow/compiler/xla/service:xla_aot_compile_cpu_test from MSAN/ASAN.	test_604915440	OPEN
+9272	Automated Code Change	test_603876699	OPEN
+9260	Copy the instruction and instruction_type of the computation to the cloned computation.	test_604804484	OPEN
+9246	Perform elementwise BF16 math natively in platforms that support it.	dimvar:native-bf16-support-hopper	OPEN
+9243	Reverts af4a1a323188eaa5d3409877b75cd33b271b82c2	test_604709072	OPEN
+9234	[XLA] Remove dead unused pass propagate_static_shapes	test_604589203	OPEN
+9220	[XLA] Remove dead unused pass unroll-loops	test_604589202	OPEN
+9219	Automated Code Change	test_603876694	OPEN
+9211	Automated Code Change	test_603877043	OPEN
+9208	Automated Code Change	test_604542215	OPEN
+9204	Automated Code Change	test_604538042	OPEN
+9203	Automated Code Change	test_603876701	OPEN
+9199	Handle element_size_in_bits in constant folding.	test_604493873	OPEN
+9195	Avoid casting the return value from Eigen::numext::signbit to bool.	test_604482207	OPEN
+9179	[XLA:GPU] Support fusion of dynamic-slice into triton gemm.	test_598709935	OPEN
+9176	[XLA:SPMD] Make manual sharding propagation more aggressive.	test_604365553	OPEN
+9168	Upgrade gRPC version to 1.43.2	test_604338245	OPEN
+9167	Remove XlaDevice::Sync overridden method.	test_604332099	OPEN
+9162	Unify if_{gpu,cuda,rocm}_is_configured macros	test_604316547	OPEN
+9156	Automated Code Change	test_604170413	OPEN
+9147	Automated Code Change	test_603914172	OPEN
+9145	Automated Code Change	test_603856835	OPEN
+9142	New host-event traceme added.	test_603177655	OPEN
+9124	Update verifyDotGeneralOp in StableHLO to support sparse dots	test_603668603	OPEN
+9122	Add SparseDot op to the MHLO dialect	test_603626360	OPEN
+9115	Improve handling of cache invalidating ops in ProducerConsumerMergedTooLarge()	test_603643142	OPEN
+9107	I just want to run presubmit	test_603377872	OPEN
+9106	Add simple optimization to Linearize().	test_603595537	OPEN
+9069	[XLA:GPU] Enforce including cuda.h when CUDA_VERSION is used	test_603355636	OPEN
+9056	Fix gpu_alignment_test to don't expect a specific fusion name.	test_603318142	OPEN
+9051	Removing "RemoveLAyoutConversionPass" after dot operands are optimized.	test_603304309	OPEN
+9042	[Draft][XLA:GPU] Add sycl runtime	Intel-tensorflow:yang/runtime	DRAFT
+9041	[PJRT:C] layouts extension	test_603165440	OPEN
+9032	Configuration cleanup for visibility	test_603116778	OPEN
+9028	Upgrade Abseil to the latest LTS	test_603116194	OPEN
+9026	[XLA:GPU] Fix fusion dump proto for the new fusion naming scheme.	test_603104212	OPEN
+9021	Reverts 972f8713b4ab9c2e867f09c94b4b359f4c074b0a	test_603074027	OPEN
+9014	Add testing modifications for oneDNN	test_603046184	OPEN
+9007	Add support for libnvjitlink	test_603022033	OPEN
+9004	Integrate Triton up to [<8-character-short-hash>](https://github.com/openai/triton/commits/<full-hash>)	test_602989286	OPEN
+9003	Integrate LLVM at llvm/llvm-project@78e0cca13507	test_603002364	OPEN
+8995	Use `py::metaclass((PyObject*)&PyType_Type))` instead of `py::metaclass(abc_meta)` in xla/python/sharding.cc	test_602762940	OPEN
+8979	[XLA:GPU] Don't use new GPU runtime at all on CUDA 11 to avoid hangs	test_602790395	OPEN
+8972	Slows down benchmarks - Probably broken check	test_602790118	OPEN
+8945	Automated Code Change	test_602554128	OPEN
+8944	PR #8637: [XLA:CPU] oneDNN MatMul constant weights pre-packing	test_602599494	OPEN
+8943	Automated Code Change	test_602594430	OPEN
+8936	[xla:gpu] Add and most-recently-used resources cache for command buffers	test_602596225	OPEN
+8934	Add int4 support to all ops on CPU/GPU.	test_602583076	OPEN
+8932	Use ArraySize() for shape size calculation when the layout has enough info.	test_602519280	OPEN
+8912	[xla:cpu] Disable flaky msan test	test_602452052	OPEN
+8905	[XLA:GPU] Add Hopper-specific fields to AutotuneResult::TritonGemmKey too	test_601766716	OPEN
+8891	Migrate users of old target to new target	test_602187688	OPEN
+8888	Put back in multiple user intermediate ops check.	test_602136505	OPEN
+8885	Automated Code Change	test_601959759	OPEN
+8883	prototype op-independent explict capture for constants	test_601922523	OPEN
+8880	[XLA:GPU] Fix crash on 0 indexing of empty array	test_601887615	OPEN
+8874	[GPU] Use NCCL user buffers for collective permute and all-to-all	trevor-m:p2p-user-buffers	OPEN
+8857	Remove shared memory tiles from tile_util.	test_601069954	OPEN
+8848	Automated Code Change	test_601622047	OPEN
+8845	Run HloCSE after each GPU priority fusion step.	test_601687355	OPEN
+8844	Automated Code Change	test_601654525	OPEN
+8843	Automated Code Change	test_601652681	OPEN
+8837	Revert pjrt SE async implementation for testing	test_595466610	OPEN
+8832	Better handle copies to/from host memory	test_600599124	OPEN
+8829	Filter out select op from MoveOpAfterLayoutConversion	test_601554911	OPEN
+8828	[XLA:GPU] Remove dynamic slice from computations extracted under autotuning.	test_599383565	OPEN
+8827	Port all StableHLO op fields using ArrayOr to use Array	test_600875379	OPEN
+8813	gpu_specs: Rename a100.txtpb to a100_80.txtpb to be more precise.	test_600778512	OPEN
+8799	Automated Code Change	test_601330631	OPEN
+8796	Add option to only consider ready nodes for to reduce memory pressure in latency hiding scheduler.	test_599798956	OPEN
+8792	Prototype of XAOT on GPU plugin	test_600925721	OPEN
+8779	[XLA:GPU] Add initial TMA support to KernelThunk	test_601158364	OPEN
+8762	Slightly modernized type annotations in xla_client.py*	test_601050177	OPEN
+8761	Integrate LLVM at llvm/llvm-project@c416b2efe89c	test_601043711	OPEN
+8758	Automated Code Change	test_600622936	OPEN
+8752	Remove suppression of `Wno-gnu-offsetof-extensions` in TensorFlow's .bazelrc	test_600924589	OPEN
+8748	Do not set pass_id on every instruction.	test_600888505	OPEN
+8743	FOR TESTING ONLY, refer to the original version for the correct pull request.	test_600862870	OPEN
+8736	[XLA] Avoid unnecessary deep copy of device groups in SPMDCollectiveOpsCreator's std::function captures.	test_599891233	OPEN
+8708	Use arrays in StableHLO conversions where applicable	test_600607455	OPEN
+8705	Add absl::SourceLocation to xla::FailedPrecondition.	test_600579764	OPEN
+8704	Add absl::SourceLocation to xla::Cancelled, xla::NotFound, xla::Unavailable, and xla::Unknown.	test_600575460	OPEN
+8703	Reverts f6d2eeaa66f85cb84f4a62259109ddbfd65f3de7	test_600566205	OPEN
+8695	Use dense arrays instead of dense elements when generating StableHLO	test_599863830	OPEN
+8691	Add absl::SourceLocations to xla::ResourceExhaustedError.	test_599659869	OPEN
+8675	[XLA:TPU:MSA] Fix bug in always_spill_default_memory flag-	test_597346124	OPEN
+8672	[XLA:GPU] Pass TmaMetadata up to KernelThunk	test_600408827	OPEN
+8664	Automated Code Change	test_600325664	OPEN
+8663	Introduce scratch space in HloInstruction.	test_600332518	OPEN
+8661	Automated Code Change	test_600152972	OPEN
+8647	[xla:gpu] Add a specialization for rendezvous returning absl::StatusOr	test_599938857	OPEN
+8626	Automated Code Change	test_599679040	OPEN
+8615	[xla:gpu] Make cu_threefry2x32 custom call compatible with command buffers	test_599660514	OPEN
+8612	Change header to attribute copyright to the OpenXLA authors	test_598911202	OPEN
+8607	Delete unused Triton patches and replace list of Triton patches with `glob` to reduce number of conflicts	test_599606547	OPEN
+8606	Upgrade Abseil to latest LTS branch (lts_2024_01_16).	test_599601406	OPEN
+8601	Get fingerprint of hlo module	test_599561560	OPEN
+8593	[XLA:GPU] [NFC] Refactor xla_gpu_enable_nccl_clique_optimization flag into xla_gpu_require_nccl_rendezvous	test_599484323	OPEN
+8589	Improve the accuracy of asinh(x) for complex x with large absolute value.	pearu:pearu/asinh	OPEN
+8587	Attempted fix to AccelerateMatmul pass	test_599462421	OPEN
+8580	Adds a PjRt host memory allocator, and a device-layout converter that doesn't assume the underlying memory is inmutable.	test_599414950	OPEN
+8578	Changed Version of Bazel to version 6.5.0	test_599383020	OPEN
+8575	Eliminates the cost variable, and instead uses MathOpt's bounded linear expressions to enforce the maximum cost between iterations.	test_599190442	OPEN
+8574	Avoid local variable and inline into call site.	test_599338295	OPEN
+8571	Make stream.cc its own cc_library.	test_599328005	OPEN
+8567	Integrate LLVM at llvm/llvm-project@3a82a1c3f6bd	test_599286613	OPEN
+8562	In HloSharding hash function, replace `tile_assignment_.array()` with `tile_assignment_.ToString()`.	test_599277284	OPEN
+8557	Remove now unnecessary inclusion of stream_executor_pimpl.h in stream_executor_headers target.	test_599235410	OPEN
+8556	Update ortools to new version	test_599229559	OPEN
+8550	[triton] Disable tensor cores for matmuls with one <=8-bit argument.	test_599152524	OPEN
+8528	PinnedAllocation now inherits from BaseAllocation.	test_598978182	OPEN
+8526	1. Allocation class is renamed to PinnedAllocation. The new Allocation class is a purely abstract interface. BaseAllocationImpl subclasses the Allocation interface, and implements all common concrete methods for final subclasses PinnedAllocation, CopyAllocation, SlicedCopyAllocation, MirroredAllocation, and ParentAllocation. Any virtual function override is performed only once (and declared as final).	test_597958694	OPEN
+8525	[xla:pjrt] Do not include nccl.h directly and use NcclApi instead	test_581908265	OPEN
+8524	Updates TensorFlow/XLA to use a newer version of ortools (9.6 -> 9.8).	test_598923592	OPEN
+8513	[ROCm] Adding driver APIs for unified stream ordered allocation implementation	ROCm:driver-apis	OPEN
+8509	Stop Triton debug info pass from triggering LLVM verifier	test_598847928	OPEN
+8508	Replacing broadcast with allocate buffer for dynamic update slice case of collective mat mul.	test_593018695	OPEN
+8505	[xla:gpu] Model warp divergence in concat op cost analysis.	test_598575950	OPEN
+8468	Automated Code Change	test_598298044	OPEN
+8466	Automated Code Change	test_598287832	OPEN
+8453	[XLA:SPMD] Do not keep a pointer storing the value of a shared_ptr, and use the shared_ptr directly instead.	test_597957162	OPEN
+8443	Integrate LLVM at llvm/llvm-project@c230138011cb	test_597894006	OPEN
+8427	PR #6872: [XLA:GPU] add cuDNN flash attention support in XLA (3rd PR with only rewriter changes)	test_596851183	OPEN
+8425	Integrate LLVM at llvm/llvm-project@c230138011cb	test_597776873	OPEN
+8419	Integrate LLVM at llvm/llvm-project@c230138011cb	test_597739952	OPEN
+8416	Migration the stablehlo reduction family of operations, with promotable semantics [RFC](https://github.com/openxla/stablehlo/pull/1664), to MHLO.	test_597407271	OPEN
+8405	[XLA:GPU] Make IndexingMapSimplifier rewrite add/mul when an operand is the identity.	test_597637636	OPEN
+8392	Remove usage of tsl clean_dep.	test_597588599	OPEN
+8390	[Triton] Re-enable minBitWidth computation in AccelerateMatmul.cpp logic.	test_595692252	OPEN
+8389	Enable MMA V3	test_597542829	OPEN
+8386	Give fusions more descriptive names.	test_597502876	OPEN
+8375	Ensure that transpose/reduction fusions don't turn into loop fusions.	test_597481819	OPEN
+8374	Automated Code Change	test_597436392	OPEN
+8369	[PJRT C API] Use serializePortableArtifact to serialize mlir.	test_597361965	OPEN
+8357	[xla:gpu] Add GpuExecutable post-initialization rendezvous to avoid deadlocks	test_597337082	OPEN
+8355	Switch to Bazel 6.4.0	test_597297315	OPEN
+8350	Replaces calls to the (deprecated) MPSolver interface with their corresponding MathOpt equivalents.	test_594313292	OPEN
+8347	Remove unneeded deps.	test_597295575	OPEN
+8343	Remove usages of clean_dep.	test_597277634	OPEN
+8338	Integrate LLVM at llvm/llvm-project@cc21aa1922b3	test_597247953	OPEN
+8300	Include triton hotfix for performance regressions	test_596890875	OPEN
+8265	Remove JAX CUDA 12.2 Docker image definition	test_596607753	OPEN
+8264	Reverts c55424482c7132f7dce3c1b3910edca3c61e3466	test_596595559	OPEN
+8254	Let ir_emitter_triton_test run on V100 and A100.	test_596547214	OPEN
+8230	[PJRT C API] Use serializePortableArtifact to serialize mlir.	test_596100806	OPEN
+8222	Reverts efb68d915c2faf754d6e31ea31918a2c58250e85	test_596054391	OPEN
+8215	Add Python bindings for IFRT IR.	test_596005916	OPEN
+8213	Causes linking error in an internal test	test_595969586	OPEN
+8212	Remove extra_deps which are not needed anymore.	test_591180096	OPEN
+8209	PR #7843: [GPU] NCCL User Buffer registration (1/3)	test_595944421	OPEN
+8206	PR #7940: LLVM codegen changes for SPIR backend	test_595934626	OPEN
+8202	#tf-data-service Re-link ListSnapshotChunksDataset in TF kernels.	test_595828091	OPEN
+8197	Remove GpuSanitizeConstantNames since it's no longer relevant.	test_595846110	OPEN
+8191	Capture and include cuBLAS logs in error messages	andportnoy:aportnoy/cublas-improve-error-logging	OPEN
+8184	Rollback due to breakage of MacOS OSS tests.	test_595748290	OPEN
+8176	[TEST] CUDA 12.3 update	test_595679726	OPEN
+8145	[xla:gpu] Remove WhileThunkNotSupported guard	test_595488209	OPEN
+8144	Internal change for build compatibility	test_595410604	OPEN
+8140	not an actual OSS change but TAP presubmit won't run until either the diffbase is submitted or I have this	test_595410606	OPEN
+8092	[XLA:GPU] Always split reductions with non-consecutive dimensions.	test_595089542	OPEN
+8088	Internal Code Change	test_595008359	OPEN
+8080	#tf-data-service Use `create_tempdir` to create temp dirs for testing.	test_594300010	OPEN
+8078	[xla:gpu] Add reproducer for memset + conditional CUDA graph update bug	test_594332776	OPEN
+8067	Re-enable minBitWidth computation and revert patch to ElementwiseOpToLLVM	test_594236457	OPEN
+8065	[xla:gpu] Update command buffer scheduling to move command buffer results close to users	test_594136737	OPEN
+8063	Internal change (public changes in diffbase).	test_592972949	OPEN
+8027	Internal Code Change	test_593205959	OPEN
+8022	[XLA:GPU] [NFC] Start replcing hlo_to_llvm_ir usage with hlo-opt	test_593136232	OPEN
+8016	Integrate LLVM at llvm/llvm-project@a4e15416b414	test_593063685	OPEN
+8014	Integrate LLVM at llvm/llvm-project@ff32ab3ae7f4	test_593052467	OPEN
+8013	Integrate LLVM at llvm/llvm-project@ff32ab3ae7f4	test_593042598	OPEN
+8011	Integrate LLVM at llvm/llvm-project@248fba0cd806	test_593020789	OPEN
+8009	Add utility for converting to and from tensorflow::Tensor from single-device	test_592993796	OPEN
+7984	Enabling Hopper optimizations in Triton by default.	test_592796697	OPEN
+7975	Add Python bindings for IFRT IR.	test_591760380	OPEN
+7972	Addressing TF query analysis errors	test_592338145	OPEN
+7967	[XLA:CPU] [NFC] Replace degenerate collectives by copies	test_592619703	OPEN
+7955	Updating Triton integrate documentation to include reference to automatic triaging tool.	test_592548767	OPEN
+7947	Integrate LLVM at llvm/llvm-project@7022a24771c8	test_592489278	OPEN
+7934	Add TryGetKeyValue() to coordination service plugin.	test_592371575	OPEN
+7914	Testing OSS CI	test_592281150	OPEN
+7911	Add DotOperandConverter and test.	test_592252806	OPEN
+7897	[TEST] Flatbuffers fix for CUDA 12.3 upgrade	test_592156245	OPEN
+7887	Fix outfeed sharding annotations in the MLIR bridge by adding the sharding for	test_592050689	OPEN
+7885	[xla:gpu] Enable Thunks + Command Buffers runtime by default	test_592042755	OPEN
+7877	Internal Code Change	test_591885761	OPEN
+7874	Replace usage of InternalErrorStrCat with absl::InternalError to get proper absl::SourceLocation invocation.	test_591988410	OPEN
+7866	Add test for C Plugin coordination service.	test_591367244	OPEN
+7859	[XLA:GPU] [NFC] Refactor GPU multi-output fusion to store state in class attributes	test_591841685	OPEN
+7852	This is a test just for presubmit.	test_591733048	OPEN
+7849	[XLA:CPU] Add support for cross-process collectives using mpi.	inailuig:mpi_collectives	OPEN
+7846	Integrate StableHLO at openxla/stablehlo@3bdd8593	test_591394584	OPEN
+7840	[XLA:GPU] Fixes tiling crash of bitcasts which introduce degenerate dims.	test_591344977	OPEN
+7814	Make LocalDeviceState and SE device include both logical and physical device IDs.	test_591171113	OPEN
+7813	Remove references to logging that has been disabled.	test_591162035	OPEN
+7804	Add a log message to print out the number of TF threads created in the threadpool.	test_591105945	OPEN
+7803	Reverts ff3c0da0bbf1f4a065e5d216c143a87b72395d29	test_591102987	OPEN
+7802	[XLA:SPMD] Push all-gather on operands to all-gather on output on dot batch_dims or non_contracting_dims if it's beneficial.	test_590750867	OPEN
+7800	HloSchedule: Add insert_instruction() to HloInstructionSequence.	test_589921386	OPEN
+7793	[tsl] Rule of Five for RefCounted class.	test_590992619	OPEN
+7791	Speed up compilation 1.76% by returning early in MakeInstructionPostOrder.	test_590988509	OPEN
+7786	[PJRT C API] Remove support for old Allocator Config bool alternative check	test_590979007	OPEN
+7773	Reverts 69b41a0b1b025f5c50f53830204ee6dc0748162b	test_590876564	OPEN
+7761	Internal visibility change	test_590695802	OPEN
+7756	Change logic to process enable/disable HLO pass flags in order.	test_590666340	OPEN
+7755	#tensorflow `ComputeBackoffMicroseconds` does not depend on :grpc++.	test_590653322	OPEN
+7754	#tf-data-service Do not busy wait while snapshot is being written.	test_590365152	OPEN
+7749	[xla] Fix a collective-permute op syntax for a test.	test_590650564	OPEN
+7734	Internal Code Change	test_590420415	OPEN
+7732	Reenable reversibility check now that Copybara-as-a-Service is working again	test_590465949	OPEN
+7731	Fix build_cleaner macro registration	test_590452742	OPEN
+7728	Disable reversibility check for `piper_postsubmit_to_github`, reenable for `piper_to_github_squash`	test_590408734	OPEN
+7727	Allow changes to be non-reversible in piper_to_github_squash	test_590401232	OPEN
+7724	[jax] Don't build "make_gloo_tcp_collectives" on non-linux platforms.	test_590385043	OPEN
+7712	Find ptxas path before using the binary.	test_590034095	OPEN
+7709	[xla:gpu] Add a specialized kTraced state to command buffers	test_590172371	OPEN
+7704	Also upgrade ARM containers	test_590154988	OPEN
+7701	Add test to disallow unbounded dynamism for BroadcastInDim op.	test_590116505	OPEN
+7696	Reverts 2f92381dda6dc01b22e227efa649035972e0d57e	test_589166851	OPEN
+7695	Fix a bug in sliced prefetching in which we did not update MSA's peak memory usage calculations after slice times are permuted by the repacker.	test_589294178	OPEN
+7690	Update callsites of LookupDevice and LookupAddressableDevice.	test_589990611	OPEN
+7684	Add unbounded dynamism for ReduceOp.	test_589937624	OPEN
+7678	[NFC] Update PJRT device ID related APIs.	test_589889641	OPEN
+7677	Include token as part of the input/output tuple in all-gather and reduce-scatter	jeffhataws:main_coalesce_add_token	OPEN
+7676	Set xnn_enable_avxvnni=false in .bazelrc.	test_589857104	OPEN
+7675	[XLA:SPMD] Support various dot partitioning case by allowing grouping partially on dimensions. (4/N)	test_584405716	OPEN
+7657	[XLA:SPMD] Order dot partitioning methods by cost model.	test_583494757	OPEN
+7652	Causes way too much log spam in every single test.	test_589450792	OPEN
+7643	Clear cycles that involve the fun field for pjit.cc.	test_589240648	OPEN
+7642	This is a test just for presubmit.	test_589229217	OPEN
+7640	Disables CopyInsertion for async computations.	test_589190518	OPEN
+7635	[XLA:TPU] Fix copy insertion to not insert copies within async computations.	test_583157702	OPEN
+7630	Internal Code Change	test_588939642	OPEN
+7624	[NFC] Update PJRT device ID related APIs.	test_588942721	OPEN
+7623	[NFC] Update PJRT device ID related APIs.	test_588942723	OPEN
+7622	[NFC] Update PJRT device ID related APIs.	test_588936232	OPEN
+7621	[NFC] Update PJRT device ID related APIs.	test_588936234	OPEN
+7620	[NFC] Update PJRT device ID related APIs.	test_588932861	OPEN
+7619	[NFC] Update PJRT device ID related APIs.	test_588932860	OPEN
+7618	[NFC] Update PJRT device ID related APIs.	test_588932868	OPEN
+7606	[XLA:GPU] Fix crash in triton tiling of bitcast ops.	test_588584412	OPEN
+7598	[XLA:GPU] Disable Triton code generation on GPUs with Turing architecture.	test_588770172	OPEN
+7595	[XLA:GPU] Add a pass to append '.0' suffix to instruction names before fusion.	test_588030463	OPEN
+7593	PR #6872: [XLA:GPU] add cuDNN flash attention support in XLA (3rd PR with only rewriter changes)	test_588714363	OPEN
+7580	Integrate LLVM at llvm/llvm-project@565dddec6396	test_588480755	OPEN
+7569	Compute shared memory usage in HloFusionAnalysis.	test_588386908	OPEN
+7560	[XLA] Minimize copies of Shape.	test_588204258	OPEN
+7558	callsite updates.	test_588138641	OPEN
+7548	[TileAnalysis] Expose methods that "fuse" instruction indexing.	test_588067958	OPEN
+7545	Integration Fixes on top of Triton import	test_588045313	OPEN
+7514	Fix a padding bug in TC <-> SC tiling rewriter.	test_587355177	OPEN
+7513	[XLA] MakeInstructionPostOrder() returns an InlinedVector().	test_587771687	OPEN
+7508	[Jax] Enable jax_include_full_tracebacks_in_locations by default	test_587734187	OPEN
+7443	Add a way to serialize CompiledMemoryStats.	test_586764960	OPEN
+7442	This cl is the children of cl/586566157. Once cl/586566157 is submitted, I will remove the "BEGIN_PUBLIC" and "EXPORT_TO_GITHUB_PR=yes".	test_584120856	OPEN
+7439	Add a way to serialize CompiledMemoryStats.	test_586732004	OPEN
+7437	Add a way to serialize CompiledMemoryStats.	test_586712707	OPEN
+7436	Add support for quantized type in HLO	test_583164522	OPEN
+7430	Patching experimental change to MoveOpAfterLayoutConversion on top of recent Triton import.	test_586673534	OPEN
+7429	[XLA:CPU Next] Flatten tuple shardings	test_586659558	OPEN
+7402	Add a way to serialize CompiledMemoryStats.	test_586008135	OPEN
+7361	Replace apply_primitive internals with `jax.jit`.	test_586121153	OPEN
+7340	Since we only have strict partial ordering instead of strict weak ordering,	test_586065873	OPEN
+7321	[XLA] Use `mhlo.topk` from JAX instead of `chlo.topk`.	test_585884545	OPEN
+7308	Testing CI with nfc	test_585735722	OPEN
+7306	[stream_executor] NFC: Make stream_executor_headers private	test_585716670	OPEN
+7263	Test presubmit.	test_584935716	OPEN
+7262	Causes spurious GPU contexts to be created and does not affect Waymo's tests.	test_584904531	OPEN
+7258	[XLA] [Docs] Update hlo-opt documentation to clarify how to use deviceless mode	test_584878346	OPEN
+7257	Internal change	test_584877726	OPEN
+7250	Integrate LLVM at llvm/llvm-project@fae3964cbc6d	test_584841476	OPEN
+7204	Support basic SPMD in tfrt + ifrt stack	test_584459265	OPEN
+7199	Remove reshape() call in LiteralBase::IsAllFirst() and check values directly.	test_584426077	OPEN
+7176	[Triton/PR] Adds builtin `tanh` support.	test_584203584	OPEN
+7165	Update to use the xla::GetStreamExecutorGpuClient() that takes a struct of	test_584100178	OPEN
+7162	testing testing 123	test_584056088	OPEN
+7157	[xla:gpu] Expose `GpuAotCompilationResult`.	test_583817283	OPEN
+7115	Add python stub files for jaxlib/cpu C++ Python extensions.	test_582655406	OPEN
+7107	[XLA:GPU] Don't generate unreachable operations in fusions in edge cases	test_583319776	OPEN
+7091	Internal temporary fix.	test_577031981	OPEN
+7078	PR #6905: [NVIDIA XLA GPU] Expose collective matmul trigger in debug options	test_583099889	OPEN
+7074	Adding visibility changes	test_577865914	OPEN
+7060	[XLA:GPU] Enable Triton for F32 matmuls having HIGHEST precision	test_582599623	OPEN
+7018	Remove DefaultLayout and make `None` same as `DefaultLayout`	test_582348201	OPEN
+7003	TEST CPU TEST FACTORY FAILURE	test_582370305	OPEN
+6986	Apply ClangTidy fixes to change `down_cast` to `proto2::DownCastToGenerated` in the dependencies of sr_www.	test_572502289	OPEN
+6983	PR #6912: Internal Google CI Workaround - Please Ignore	test_582076368	OPEN
+6981	This is a default message	test_581012928	OPEN
+6968	[XLA:PARSER] Don't intialize layouts.	test_581988654	OPEN
+6963	[triton] Enable python tests (partially).	test_576072644	OPEN
+6939	Internal infrastructure change	test_581305301	OPEN
+6938	Deduplicate stablehlo/experimental passes	test_581294521	OPEN
+6919	[XLA:GPU] Rewrite memory bandwidth and cache modelling.	test_577837084	OPEN
+6878	Unify specializations of random distributions	test_580707257	OPEN
+6877	[Mosaic] Python bindings for `VectorLayout`, `VRegDataBounds`, `assemble`, `disassemble`, `relayout` and `apply_layout_op`	test_572845530	OPEN
+6829	[PJRT C API] Add a util method to get the PJRT C API version of the backend.	test_580239566	OPEN
+6821	[XLA:GPU] Add xla_gpu_force_autotuning_parallelism flag	test_580186689	OPEN
+6820	[XLA] [Docs] Document CLI tools which are shipped with XLA	test_580183235	OPEN
+6805	Add some tests to test for dot and convolution support.	test_579970151	OPEN
+6779	Copybara import of the project:	test_579311982	OPEN
+6778	[NFC] Export test GpuTargetConfigProto textproto.	test_579253284	OPEN
+6767	Add `@hedron_compile_commands` to XLA to generate compile_commands.json	test_579223406	OPEN
+6735	Export JAX build script	test_578947064	OPEN
+6732	Update visibility for gomlx.	test_578910781	OPEN
+6731	Update visibility for gomlx.	test_578905997	OPEN
+6720	[PjRt-IFRT] Treat a token output from a PjRtLoadedExecutable as if it were a scalar bool output	test_569378080	OPEN
+6690	[PJRT C API] Move eligible Device tests from tpu to the test factory	test_578352265	OPEN
+6666	Update users to adjust visibility.	test_575225043	OPEN
+6639	[tsl] forward TSL logging to Absl logging	test_577935032	OPEN
+6637	[PJRT C API] Move eligible executable tests from learning/brain.../pjrt_c_api_tpu_test.cc to the Pjrt C Api test factory (third_party/tensorflow.../pjrt_c_api_test.cc)	test_577929487	OPEN
+6627	Integrate LLVM at llvm/llvm-project@f6643263631b	test_577835360	OPEN
+6626	[XLA:GPU] Make the order of Executable candidates deterministic for each fusion	test_577819767	OPEN
+6614	Some copies in main thread need to be added even if they are filtered out by	test_577458845	OPEN
+6600	Test to make sure target is not excluded from CI	test_577291812	OPEN
+6592	[XLA:GPU] Avoid autotuning more relatively small fusions	test_577177640	OPEN
+6590	WIP debug version [XLA:GPU] Modify autotuning configs based on the input/output size of the dot	test_577182394	OPEN
+6554	Adds compressed_string type to XStat	test_576496122	OPEN
+6550	Update TensorRT-{commit} from 9ec6eb6db39188c9f3d25f49c8ee3a9721636b56 to e4da0731366154b5b2874d835bc1dde95b00ecf9.	test_576667802	OPEN
+6549	Update bazel_toolchains from 8c717f8258cd5f6c7a45b97d974292755852b658 to b18c44ec3e0f996443db5a319edd49535f89d1c9.	test_576667611	OPEN
+6547	Modify Functional HLO Runner to accept compilation environments via RawCompileOptions.	test_575356298	OPEN
+6536	Fix bad CollectiveCallInstruction	test_576543694	OPEN
+6526	Reintroduces replication as a default sharding strategy.	test_576305820	OPEN
+6518	Log warning instead of returning error when parsing EnvOptionOverrides in CompileOptions.	test_576291528	OPEN
+6516	[XLA/GPU] Assert that the instruction doesn't have control successor when	test_576277316	OPEN
+6511	Some internal changes.	test_575261680	OPEN
+6509	Testing openxla/stablehlo#1810 build changes	test_575997096	OPEN
+6492	[Draft] L2 prefetch demo.	test_574120862	OPEN
+6472	test to make sure CI is working	test_575341836	OPEN
+6468	Make some helper functions public.	test_575293365	OPEN
+6463	Integrate LLVM at llvm/llvm-project@49af6502c6dc	test_575221522	OPEN
+6448	[xla:gpu] post-scheduling AllReduce/AllGather/ReduceScatter prototype + near_op_threshold knob	test_574990872	OPEN
+6436	[XLA:GPU] Change Triton GEMM criteria to be based on complexity	test_574836854	OPEN
+6435	PR #5782: [NVIDIA XLA GPU] Turn the cudnn fused attention feature ON by default	test_569441457	OPEN
+6424	[XLA:GPU] Put back FusionFitsInBudget heuristic	test_574570948	OPEN
+6421	docker kokoro failure	test_564475515	OPEN
+6415	Make the dict mismatch error more readable.	test_574261054	OPEN
+6400	[PJRT:C] Bump major version to 1.0	test_574302703	OPEN
+6389	Test that I didn't break the CI	test_574180701	OPEN
+6380	[XLA:GPU] Make gemm_rewriter_triton_test work with --xla_gpu_triton_gemm_any=true	test_574092359	OPEN
+6372	Use hermetic Python in TSL and XLA	test_573978582	OPEN
+6359	Fix a bazel path still referencing TF in xla	test_573903451	OPEN
+6356	Fix a bazel path still referencing TF in tsl	test_573876386	OPEN
+6352	Bumping Triton version	test_573804972	OPEN
+6286	Introduce the DynamicFftOp experiment	test_573053217	OPEN
+6264	Add comment to FixBazelEnvPath	test_572867666	OPEN
+6246	Update boringssl to newer version.	test_572651308	OPEN
+6241	[XLA] Remove packed nibble mode	test_572468082	OPEN
+6222	Add clang-format check to github actions	test_572365796	OPEN
+6221	Add Python bindings for IFRT IR.	test_570554376	OPEN
+6178	[gpu] NFC: Do not use StreamExecutor internal API to access underlying Gpu stream	test_572022824	OPEN
+6172	Open source tpu_embedding_v3.py	test_571405780	OPEN
+6170	See what the state of git is in Copybara generated PRs	test_571986582	OPEN
+6148	Alter the location of HloDCE and HloConstantSplitter in GSPMD pipeline.	test_571472471	OPEN
+6147	Satisfy Presubmits, OSS change in diffbase.	test_570217094	OPEN
+6131	Use faster radix sort using CUB library for simple shapes	test_571263296	OPEN
+6110	Setting xla_while_loop_unroll_count flag to -1 as default.	test_570876640	OPEN
+6090	Integrate LLVM at llvm/llvm-project@173fd67a124d	test_570787090	OPEN
+6089	[xla:gpu] collective_combiner_utils: exhaust all possible combining candidates	test_570781296	OPEN
+6081	NFC: Useless polish of CUDA stubs.	test_570637654	OPEN
+6080	Adds EdgeTPU MLIR dump to xProf Graph Viewer	test_569659433	OPEN
+6068	Internal CI testing.	test_567096547	OPEN
+6062	[xla:gpu] post-scheduling AllReduce/AllGather prototype	test_570407811	OPEN
+6048	NFC: replace uses of `TF_DISALLOW_COPY_AND_ASSIGN`/`SE_DISALLOW_COPY_AND_ASSIGN` macros with implementation.	test_570144966	OPEN
+6019	[PJRT C API] Implements `GetOutputShardings` for `PjRtCApiExecutable` and `PjRtCApiLoadedExecutable`.	test_569648420	OPEN
+6017	Fix output sharding	test_569396990	OPEN
+5991	added corner cases to while analysis and constant sinking	test_569396552	OPEN
+5988	Add gather test coverage for some bug.	test_569361963	OPEN
+5951	Move down_cast from the tensorflow to the tsl namespace	test_568886635	OPEN
+5950	Avoid creating multiple async wrapped computations when parsing hlo module string.	test_568913513	OPEN
+5946	Set up an API to aggregate profile protos.	test_568881994	OPEN
+5941	GpuCompilationEnv proto Propagation	test_568473182	OPEN
+5895	Remove bazel from jax's docker image and use the ones preinstalled in the sigbuild image	test_568369438	OPEN
+5888	[xla:gpu] post-scheduling AllReduce prototype	test_568337924	OPEN
+5856	[XLA] Make IsCrossModuleAllReduce() and IsCrossReplicaAllReduce() consider ReduceScatter.	test_568064417	OPEN
+5851	Use string_view instead of copying strings around	test_567885192	OPEN
+5843	[xla] Fix the HLO parser and verifier for wrapped kAsyncUpdate/Done	test_567437233	OPEN
+5834	[tsl] forward TSL logging to Absl logging	test_567642563	OPEN
+5827	Add method to create GpuCompilationEnv from CompilationConfig.	test_567601013	OPEN
+5797	[XLA:GPU] Enable Triton Softmax autotuning-driven fusion choices. (PoC)	test_559408199	OPEN
+5762	Remove visibility hack	test_567039389	OPEN
+5736	[PJRT C API] Register custom callback for `xla_python_gpu_callback` in plugin module.	test_566448266	OPEN
+5719	Fix TF-TPU build flags	test_566669604	OPEN
+5698	Remove dependency on removed cl565664892.patch	test_566425066	OPEN
+5664	Reassign entry computation layout if needed.	test_566110823	OPEN
+5660	Dummy froofra to be able to run presubmits in the presence of diffbase	test_566016908	OPEN
+5653	Add some logging and fix for ChooseCompactOrSparseCoreLayoutForShape for s4/s8 shapes	test_565719583	OPEN
+5576	Add "memories_test.py" to export file list.	test_559235820	OPEN
+5559	Integrate LLVM at llvm/llvm-project@743659be87da	test_564714467	OPEN
+5539	Allow `input >= output` on size in `input_output_alias`. Before this cl, the input output alias have to be in the same size, which restricts the solution space. We relax this constraint to increase the memory saving.	test_560826714	OPEN
+5516	Remove unused StableHLO dependencies	test_563770620	OPEN
+5497	Add highway c++ library as a dep to TensorFlow	test_563516394	OPEN
+5495	Add int4 cast, fill, and functor ops to enable testing.	test_562926380	OPEN
+5492	Move pip_parse from WORKSPACE file to workspace2.bzl	test_563167869	OPEN
+5484	Always serialize and deserialize what we need from hlo module in tfrt_tpu_pjrt_client	test_561751547	OPEN
+5475	Test TSL Github actions	test_563151438	OPEN
+5474	Add Int4 types to TensorFlow.	test_562923117	OPEN
+5462	Add host analysis to TPU timeline.	test_562897293	OPEN
+5460	build a cuda plugin package	test_561779939	OPEN
+5458	Open source op & kernel for `GetMinibatchSplitsWithPhysicalReplica`	test_561791034	OPEN
+5456	Open source op & kernel for ConvertToCooTensor	test_561245346	OPEN
+5447	[XLA:GPU][NFC] Pass DebugOptions to TritonGemmAutotuneExtractor and CublasGemmAutotuneExtractor	test_562762594	OPEN
+5405	Hash serialized topology description for new cache key generation.	test_561510844	OPEN
+5398	Integrate int4 C++ types into TensorFlow.	test_561481592	OPEN
+5378	Switch MLIR dialects to use properties.	test_561282943	OPEN
+5371	Move pip_parse from WORKSPACE file to workspace2.bzl.	test_561402591	OPEN
+5362	[XLA] Creating FrozenStackTrace from GraphDebugInfo retains user / framework frame distinction.	test_561034123	OPEN
+5280	Add a new pass for placing MHLO op folder patterns. Add ConvertOpFolder in the new pass. ConvertOpFolder handles the folding when the output type has a wider bit-width than the input type. Move the constant folding logic in ConvertOp::fold to the new pass. This folder satisfies the criteria we set under [RFC] Move MHLO canonicalizers and folders to separate opt-in passes: this folder increases the model binary size.	test_559904020	OPEN
+5254	Open source op for `GetMinibatchesInCsrWithPhysicalReplica` for SparseCore.	test_559658889	OPEN
+5250	Adding sparse_core_ops_stats_handler for recording metrics	test_559613169	OPEN
+5228	[XLA:GPU] Enable single wave autotuning by default	test_557596354	OPEN
+5221	Rename tf_to_kernel to hlo_to_kernel and remove last dependencies on tensorflow dialects.	test_559691812	OPEN
+5210	Remove the JAX_ENABLE_MEMORY_KIND flag and canonicalize by default now that PJRT C API supports memories.	test_559522104	OPEN
+5206	Add name to glob_lit_tests.	test_559533683	OPEN
+5167	build gpu plugin	jyingl3:test_plugin	DRAFT
+5164	Integrate LLVM at llvm/llvm-project@b7d304300a5f	test_559175676	OPEN
+5155	Integrate LLVM at llvm/llvm-project@b7d304300a5f	test_559115154	OPEN
+5148	[XLA:GPU] When estimating runtime in the gpu cost model, use the estimated thread count instead of the output shape to determine amount of parallelism.	test_558769823	OPEN
+5125	[xla:gpu2] NFC: Build a more efficient IR for importing tensors	test_558826051	OPEN
+5116	Refactor py_client_gpu into its own build target.	test_558715200	OPEN
+5114	[IFRT] Fix ShardingParam-to-OpSharding conversion	test_557684786	OPEN
+5050	PR #5152: [ROCM] Update failing xla/service/gpu tests	test_557592229	OPEN
+5039	test 3rd party presubmit	test_557575815	OPEN
+5029	[XLA] Do not submit. Using this to run presubmits without spamming everyone's inbox	test_557529742	OPEN
+5012	Fixed the test failure.	test_557338538	OPEN
+5004	PR #60161: Fix building for host architecture by default	test_557265715	OPEN
+5003	Add experimental shape refinement for serialized MHLO TanOp	test_557222077	OPEN
+4993	Add error logging service to `core`	test_556524795	OPEN
+4988	[JAX] Switch host_callback to use MLIR lowering instead of the older direct HLO translation rules.	test_557161108	OPEN
+4976	Export errors from `Executor`	test_553244141	OPEN
+4958	Apply clang-tidy fixes	test_556862970	OPEN
+4950	Remove folders that are not applicable to mobile.	test_556828784	OPEN
+4948	Remove canonicalizers that are not applicable to mobile.	test_556829566	OPEN
+4940	[XLA] Pipe through existing stack frame locations from TF to XLA (using the non-mlir based bridge).	test_552739083	OPEN
+4928	Remove canonicalizers that are not applicable to mobile.	test_556090221	OPEN
+4924	New cache key generation: CompileOptions.	test_556026932	OPEN
+4900	Testing for LoadSavedModel & Run functions	test_543575390	OPEN
+4886	Updates Auto Sharding to invoke CP-SAT twice: once with crosscut sets (to restrict the search space) and again without (to further reduce the solution cost).	test_551861182	OPEN
+4881	Remove no_oss tag from cudnn_fused_conv_rewriter_test.	test_555336654	OPEN
+4871	Enable layering_check in the gpu crosstool	test_555251980	OPEN
+4861	[XLA:GPU][NFC] Rename option to control GEMM and convolution autotuning.	test_555024409	OPEN
+4853	[Test] Upgrade Clang version to 17	test_554913662	OPEN
+4819	Apply clang tidy fixes	test_554629273	OPEN
+4817	Apply clang-tidy fixes	test_554614323	OPEN
+4794	[XLA] NFC: Rename mlir::BaseStackFrameIndexBuilder to xla::StackFrameIndexBuilder.	test_553735611	OPEN
+4792	[XLA] NFC: Refactor mlir::StackFrameIndexBuilder.	test_552739084	OPEN
+4773	Registration mechanism for idempotent proto serializer.	test_553918893	OPEN
+4770	[XLA:GPU] Add autotuning for loop fusion unroll factors	test_553823762	OPEN
+4767	Attempt to add in clang warning refinement and promotion to errors.	test_553853312	OPEN
+4765	Testing oss clang tidy	test_553836710	OPEN
+4715	No external changes.	test_553278901	OPEN
+4706	No external change.	test_553227692	OPEN
+4704	[PJRT C API] Fix Breakage Detective Reason Error	test_553219964	OPEN
+4680	No external changes.	test_552944731	OPEN
+4647	potential fix for physical and logical device ordinal for GPU virtual devices - use the platform ID/ordinal to compare with the SE ordinal for GPU.	test_552602858	OPEN
+4646	Add support for updating an HloSchedule after inserting computations to the module.	test_547626617	OPEN
+4640	Provide option to include hlo module summary in executable.	test_552607971	OPEN
+4637	No public change.	test_550709758	OPEN
+4632	Upgrade bazel to the latest version.	test_552562645	OPEN
+4631	Roundtrip unbounded dimension sizes between MHLO and HLO	test_552541722	OPEN
+4630	[TF:PJRT] Use TF device ID as PJRT device ID for GPU device to support virtual devices.	test_551952890	OPEN
+4597	Add function to process propagation visualization log dumps	test_551938446	OPEN
+4590	[PJRT] revert PjRtDevice::PoisonExecution due to unit test breakage	test_551925745	OPEN
+4526	PR #60026: Reduce MKL overheads on small shapes by not rewriting node to use MKL	test_551267675	OPEN
+4511	Temporary until the parent CL is submitted	test_551085807	OPEN
+4486	Reverts 0a2646428ffbce5de769f057a1e285282befdb79	test_550908288	OPEN
+4440	[XLA] Remove duplication	test_550416135	OPEN
+4435	Simplify the `GetReadyFuture` implementation	test_550076063	OPEN
+4408	Move autotuning-related functions back to gpu_compiler.cc for readability	test_549871606	OPEN
+4365	Update tensor buffer instead of creating a new tensor to avoid double free.	test_549448890	OPEN
+4362	[xla][gpu] Add AsyncStreamKind enum for GPU runtime streams.	test_549376111	OPEN
+4361	C API for XLA Outside Compilation on TPU VMs	test_549398335	OPEN
+4351	[XLA:AllGatherDecomposer] Make decomposed all-gathers behave in CSE as true	test_549299532	OPEN
+4329	Replace usages of tsl::errors::{Aborted, ....} with the equivalent absl:: call	test_549132036	OPEN
+4323	Add a basic test for ragged layout.	test_549037424	OPEN
+4309	Diffbase change is oss and this comment will be removed after we checked in the diffbase.	test_548258349	OPEN
+4307	[XLA:GPU][NFC] Add an option for enabling/disabling HLO emitter autotuning.	test_548875576	OPEN
+4274	[shape_poly] Add shape polymorphism support for TopK.	test_548450525	OPEN
+4272	[IFRT] Make Sharding aware of device addressability	test_548270812	OPEN
+4266	Skip using temp files/folders when save tensor and new checkpoint.	test_547237568	OPEN
+4232	Add riegeli dependency that is used in tensorflow/tools/proto_splitter, and export proto splitter library to github.	test_525295612	OPEN
+4206	Add a new pass that identifies quantization patterns to uniform quantized types in StableHLO.	test_547698057	OPEN
+4201	Load Python rules through common shim.	test_547613944	OPEN
+4188	Move //third_party/tensorflow/compiler/xla/service:{hlo_computation_deduplicator, hlo_dce} and tests to //third_party/tensorflow/compiler/xla/hlo/transforms and update all users.	test_547551971	OPEN
+4186	Fix the propagation of the errors through TF_ASSIGN_OR_RETURN.	test_547539452	OPEN
+4182	[mkldnn] Only build the pieces of mkldnn needed for GEMMs.	test_547488401	OPEN
+4164	Provide `tensorflow::tpu::HostTransferManagerBase` interface for outside complication on TPU VMs	test_547255890	OPEN
+4160	Test whether stream_search_test is ever actually ran	test_547275248	OPEN
+4081	Change based on functions to count float and integer values within a literal in LiteralBase.	test_546151750	OPEN
+4077	Change based on functions to count float and integer values within a literal in LiteralBase.	test_542358544	OPEN
+4073	Internal changes only.	test_545262163	OPEN
+4036	Added attributes within hlo and xla data proto to keep track of desired statistics.	test_545699034	OPEN
+3981	[XLA:GPU] Add autotuning for row reduction	test_545094340	OPEN
+3974	Add input type inference logic and WeakTensor input and output support for unary and binary ops.	test_543590492	OPEN
+3944	Test Clang-17 installation	test_544497398	OPEN
+3937	[XLA:TPU] [Live Range] Mandate valid schedule.	test_544441570	OPEN
+3933	Internal Tensorflow development updates.	test_544401386	OPEN
+3918	[IFRT] Change OpaqueSharding use cases with more specific lightweight shardings	test_544249058	OPEN
+3915	test the windows-pycpp for windows docker file	test_541507938	OPEN
+3912	Testing CHECK macro	test_544197768	OPEN
+3882	Enable PjRt SE buffer error handling .	test_542711112	OPEN
+3875	Extend while loop analysis to handle more loop trip counts. More specifically, now constants are correctly captured across computations.	test_543839433	OPEN
+3829	No longer require "ready to pull" label to import PRs, just require approval.	test_543571523	OPEN
+3812	enable --set_xla_gpu_enable_experimental_block_size flag by default	test_543402428	OPEN
+3811	[XLA:GPU] Make Triton autotuner more stable	test_543401923	OPEN
+3810	enable --set_xla_gpu_enable_experimental_block_size flag by default	test_537880810	OPEN
+3786	[XLA:GPU] [NFC] Remove an extraneous error check from GetModuleFunction	test_542860872	OPEN
+3778	[XLA:GPU] [NFC] Remove unused config	test_542798874	OPEN
+3761	[XLA/debuggability] Dump the module extracted from the module detected with OOM issue.	test_542598641	OPEN
+3760	Internal change to update licenses.	test_541004307	OPEN
+3728	[XLA:GPU][NFC] Make XlaCompileMain use LoadAutotuneResults instead of passing an AutotuneResults object	test_542234463	OPEN
+3727	[XLA:GPU] Allow building autotune_serialize without CUDA	test_542234464	OPEN
+3722	OSS part of TFRT runtime infra	test_542078305	OPEN
+3718	Introduce BackendCompiler interface for injecting custom compiler logic.	test_541805476	OPEN
+3678	Remove extraneous usage of `if_tsl_link_protobuf` from `xla_cc_test`	test_540969016	OPEN
+3663	Change based on functions to count float and integer values within a literal in LiteralBase.	test_540731003	OPEN
+3653	[xla][hlo] Fix CollectivePermuteStart/Done.	test_540694980	OPEN
+3643	[PJRT C API] Add tests for PJRT C API Implementation through a test factory	test_540636374	OPEN
+3640	Add AbslHashValue function for StackFrame	test_540631288	OPEN
+3623	Added attributes within hlo and xla data proto to keep track of desired statistics.	test_539139200	OPEN
+3621	Added functions to count float and integer values within a literal in LiteralBase.	test_539164849	OPEN
+3616	moving JS code in hlo_graph_dumper.cc to hlo_graph_dumper.h.	test_537552345	OPEN
+3609	Visibility change for XLA targets.	test_540280091	OPEN
+3556	PR #60161: Fix building for host architecture by default	test_539791158	OPEN
+3550	Rollback of breaking changes	test_539852222	OPEN
+3539	Internal CI testing.	test_538173092	OPEN
+3508	Improve serialization support.	test_539187178	OPEN
+3465	Zlib compress kernel proto.	test_535634636	OPEN
+3459	Process DCN events when trace viewer tool is selected	test_538691035	OPEN
+3448	Remove unused dependency from hlo_legalize_to_stablehlo	test_538457761	OPEN
+3447	[XLA:GPU] Fix buffer overflow detected by fuzzer	test_538458698	OPEN
+3442	Add `HasLimitedIciRouting()` to PjRtTopologyDescription	test_537995226	OPEN
+3425	Fix handling of bitcast-convert where the size of the element-type differs.	test_538252155	OPEN
+3418	Pip import test	test_535654834	OPEN
+3417	[XLA:CollectiveMatmul] Wrap transposed shardings in a struct.	test_538204949	OPEN
+3402	Add assignees.{py,yml} for automation that adds assignees to PRs and Issues. This is intended to replace trusted_partners.yml.	test_537950812	OPEN
+3398	Make changes to xla:bit_cast_test that should make it fail layering_check	test_537962432	OPEN
+3394	[xla:aot] codegen: use BufferInfo's EncodedBufferInfo constructor	test_537914671	OPEN
+3385	Add support for dtype float8_e4m3b11fnuz	test_537816351	OPEN
+3369	Add and use update_backend_config function.	test_537455707	OPEN
+3366	Put the randomly generated test suite into its own directory to allow fuzz	test_537420620	OPEN
+3362	Nothing will be exported to github.	test_537434856	OPEN
+3355	Print correct type name for `jax.Array`s	test_537397011	OPEN
+3350	`bazel test ...` behavior test	test_537357013	OPEN
+3275	Try to not link TransformUtils	test_536761572	OPEN
+3274	[XLA] Fix pre-processing of outfeed.	test_536754284	OPEN
+3268	[mhlo] AllReduce tuple support	test_517505833	OPEN
+3265	Try to not link TransformUtils	test_536633123	OPEN
+3263	[TF:PJRT] Integrate PJRT to TF GPU device.	test_536606145	OPEN
+3260	Link se_gpu_pjrt_client into libtensorflow_cc	test_536548535	OPEN
+3257	Internal CI testing.	test_536489670	OPEN
+3252	Update configure.py to set Clang as the compiler	test_533253227	OPEN
+3243	[XLA:GPU] Verify output shapes of kLoop MOFs.	test_536268992	OPEN
+3219	[XLA:GPU] Codegen some reductions as kLoop rather than kFusion.	test_535509708	OPEN
+3217	Move float8 code to TSL and add the float8_e4m3b11 type into some files that were missing it, plus some other cleanup.	test_535429058	OPEN
+3208	Add test for small attention model.	test_534182492	OPEN
+3176	PR #60409: [NVIDIA XLA]Replace broadcast of trivial matrix bias by optional custom-call for CUDA >= 12	test_532865009	OPEN
+3162	[XLA:CPU Next] Run JAX tests as presubmit.	test_534401250	OPEN
+3140	...text exposed to open source public git repo...	test_534064150	OPEN
+3135	Add function to check if an event is a Dcn event.	test_533906797	OPEN
+3101	Internal CI testing.	test_522397098	OPEN
+3088	[debug] link se_gpu_pjrt_client to gpu_device.	test_532966729	OPEN
+3084	[Multi-host HLO runner] Enable setting max_outer_loop_count and max_loop_count for flattening.	test_530430821	OPEN
+3080	[XLA] Do not do cross program prefetch for very sparsely accessed tensors.	test_532837393	OPEN
+3062	[DEBUG] Create host_platform no registration.	test_532702172	OPEN
+3053	[xla:gpu] Use a separate cudnnHandle_t for CUDA graph capture	test_532634313	OPEN
+3050	[DEBUG] Create host_platform no registration.	test_532619025	OPEN
+3049	[DEBUG] Create host_platform no registration.	test_532578501	OPEN
+3021	[xla:aot] tfcompile: link aot_ffi_c_symbols when HloLowering is enabled	test_532323749	OPEN
+3011	Add GPU static initializer	test_530418336	OPEN
+3001	[XLA:GPU] Propagate non-standard layout for Triton SplitK matmuls	test_531492699	OPEN
+2994	[xla:tf2xla] Support AOT XLA Runtime	test_531437886	OPEN
+2965	Link se_gpu_pjrt_client breaks OSS build.	test_531437949	OPEN
+2958	Remove host_platform from dep.	test_531350637	OPEN
+2952	Adding a comment about the thread safety of accessing compilation environments.	test_531288906	OPEN
+2946	Prune generated test suite under xla/tests/fuzz to only include tests with unique coverage	test_531264680	OPEN
+2942	Rename float8_e4m3b11 to float8_e4m3b11fnuz in ml_dtypes, making some corresponding changes in XLA, and make some capitalization more consistent.	test_531219024	OPEN
+2931	Add struct for Dcn messages	test_531011903	OPEN
+2901	Move e4m3b11 type into the float8 files in TSL rather than the bfloat16 files.	test_530396241	OPEN
+2899	Return DeviceDescriptions by reference instead of by value.	test_530746242	OPEN
+2891	Replace calls to TF errors constructors to use absl constructors instead.	test_529838639	OPEN
+2884	Export StableHLO APIs safely in TensorFlow	test_530618498	OPEN
+2877	Replace calls to TF errors constructors to use absl constructors instead.	test_529838621	OPEN
+2876	Replace calls to TF errors constructors to use absl constructors instead.	test_529838622	OPEN
+2868	Remove TFRT eager model from tensorflow and dependencies of google internal codebase.	test_530445855	OPEN
+2866	Remove TFRT eager model from tensorflow and dependencies of google internal codebase.	test_530441133	OPEN
+2841	[TF:PJRT] Integrate PJRT to TF GPU device.	test_530151005	OPEN
+2826	Move //third_party/tensorflow/compiler/xla/service:hlo_cost_analysis{_test} to //third_party/tensorflow/compiler/xla/hlo/utils and update all users.	test_529749717	OPEN
+2808	[XLA] test a change word word word.	test_529522870	OPEN
+2801	[jax][sparse] Uses a better abstract evaluation rules for binary operations.	test_529208580	OPEN
+2786	[NFC] Modify PGLE proto	test_529135077	OPEN
+2772	Add loaded executable bindings to CompileOptions.	test_528877851	OPEN
+2760	upgrade to cuda 12.1 and cudnn8.9	test_528619407	OPEN
+2752	[XLA/GPU] Remove AllToAllDecomposer from XLA/GPU pipeline.	test_528571678	OPEN
+2746	(This is not needed when the underlying CL is approved)	test_528033857	OPEN
+2742	Add tests for XlaCallModule to TF	test_526801400	OPEN
+2727	Google internal changes.	test_527792135	OPEN
+2687	Make some internal changes	test_527176325	OPEN
+2644	adding this description to keep presubmit happy	test_526168598	OPEN
+2619	Make some internal changes	test_523195670	OPEN
+2607	PR #60377: [NVIDIA XLA] Support Conv-Bias-Relu6/LeakyRelu fusion in XLA using cuDNN runtime fusion	test_525615377	OPEN
+2570	[XLA:TPU] Fix large relative error in the negative tail of the logistic function. This is done by computing logistic as 1/(1+exp(-x)) instead of 0.5+0.5*tanh(0.5*x). The latter has very poor relative accuracy for x<0 as the function approaches zero (in fact it has no accurate digits below x = -16 or so).	test_525002273	OPEN
+2569	Dynamic Device manager list devices in a deterministic order.	test_525272394	OPEN
+2568	Enable Kernel based collectives between TPU workers.	test_524485382	OPEN
+2567	A/B benchmarking: perform builds in a different job and pass artifacts between jobs.	test_525267003	OPEN
+2549	[XLA] Test tile assignment.	test_525002614	OPEN
+2548	base cl touches third_party	test_524112264	OPEN
+2544	[TF:PJRT] Use logical_on_device_shape to calculate output tensor shape.	test_524399778	OPEN
+2538	[TF:PJRT] Manage streams in a global singleton.	test_524627843	OPEN
+2532	Add authors to assignees	test_524317734	OPEN
+2527	Removed cublas_plugin, cufft_plugin, and cudnn_plugins from build_config.	test_524308707	OPEN
+2515	Base CL touched third_party	test_524055780	OPEN
+2496	[cuda graphs] Enable by default	test_523841605	OPEN
+2494	Make _device_assignment a `List[Device]` so that we don't convert a list to a tuple and vice-versa everywhere	test_523821983	OPEN
+2488	Removed cublas_plugin, cufft_plugin, and cudnn_plugins from build_config.	test_523813816	OPEN
+2431	Updates Bazel version from 5.3.0 to 6.0.0	test_522738648	OPEN
+2425	[JAX] make tree_util.flatten_up_to respect Nones being pytree nodes	test_522713538	OPEN
+2342	Set AsyncStart, AsyncDone, and AsyncUpdate HLOs to return true in HloInstruction::has_to_apply()	test_520987325	OPEN
+2334	[XLA] Better error message for ShardingRemover.	test_521839612	OPEN
+2329	PR #59599: [oneDNN]: Adding a build flag to conditionally compile with oneDNN v3.x	test_521801200	OPEN
+2321	[sparse][xla-next] Add lowering rule for squeeze custom call.	test_521589159	OPEN
+2298	Reverts a2a17542b5b7f95ece3880effa4eec364b196737	test_521601176	OPEN
+2285	Upgrade gRPC version to 1.43.2	test_520710884	OPEN
+2266	Updates Bazel version directly to 6.0.0	test_521119148	OPEN
+2251	Remove usage of <sys/sysmacros.h> header	test_520953604	OPEN
+2243	Run dot canonicalization after layout assignment.	test_514384217	OPEN
+2233	[xla:cpu:next] add logic for benchmarking AOT matmul tiling	test_520704531	OPEN
+2223	[XLA] Avoid emitting a pad when doing masked padwithvalue of iota.	test_520100214	OPEN
+2219	Rewrite `mhlo.while`s that are simple for loops to `scf.for`.	test_520601921	OPEN
+2194	Proto serialization for pytree with backup pickling.	test_520222966	OPEN
+2180	Removes the use of FLAG: xla_sc_skip_unnecessary_copy_removal_in_post_scheduling.	test_520071490	OPEN
+2149	Initial no-op setup to add profiler integration.	test_519288608	OPEN
+2092	[xla:gpu] Update trace annotation produced by cuda graph	test_518731277	OPEN
+2082	Add padding option "SAME_LOWER" for ticket https://github.com/google/jax/pull/14990	test_518055103	OPEN
+2079	Internal CI testing.	test_518563810	OPEN
+2065	[TF:PJRT] Add an API to remove a PJRT client from TFGlobalResourceManager.	test_518362854	OPEN
+2023	[XLA] Change reduces reducing size-1 non-minor-most dimensions into a less expensive copy + bitcast.	test_517483338	OPEN
+2004	Hide tstring internals from API users	test_517346115	OPEN
+2001	Convert local rendevzous table to use WeakPtr.	test_516280613	OPEN
+1997	[LAX:RBG] Allow any type to RngBitGenerator	test_517243854	OPEN
+1990	[Test] Test new Bazel version	test_517351880	OPEN
+1975	Add PJRT TPU aot device_attributes support to PjRtDeviceTopology.	test_516983155	OPEN
+1948	Make *_hdrs targets only depends on headers	test_516628824	OPEN
+1921	[mhlo] Pretty printing for all ops with dense array (dimension, permutation, etc)	test_516593913	OPEN
+1900	Vendor XLA/TSL into TensorFlow as Bazel dependencies	test_516343955	OPEN
+1896	follow-up to cl/515714382. removes legacy trace events from the TSL Trace proto.	test_516321656	OPEN
+1891	Vendor XLA/TSL into TensorFlow as Bazel dependencies - Test	test_516282546	OPEN
+1882	Improve the accuracy of HermitianEigenDecomposition2x2.	test_515920396	OPEN
+1869	[Xprof] Capturing deduplication name from hlo proto and using it to populate the equivalent field in OpMetricsDb.	test_516032585	OPEN
+1856	Allow variable k type and output index type in topk.	test_515757351	OPEN
+1843	Add support for StableHLO Serialized Portable Artifacts in JAX2TF.	test_515635970	OPEN
+1828	Fix copy_array_to_devices_with_sharding by making it take a committed argument so that the Array created has the right semantics.	test_515506282	OPEN
+1822	Update trusted_partners github action	test_515468628	OPEN
+1814	Merge C++ and Mesh implementation of most Mesh methods.	test_515193165	OPEN
+1810	[LatencyHidingScheduler] Add a host send/recv early scheduling rule.	test_515341067	OPEN
+1780	Add line info into proto dump for device planes	test_515121778	OPEN
+1771	Add multithreading support for GroupTpuEventsOSS.	test_515099421	OPEN
+1743	Vendor XLA/TSL into TensorFlow as Bazel dependencies	test_514841485	OPEN
+1702	[XLA] Add int4 types to MHLO translate.	test_514472039	OPEN
+1700	[PJRT C API] Bump up the xla_client version as the signature of make_c_api_client was changed in a previous change.	test_514447363	OPEN
+1671	Add set_to_apply_wo_fusioncheck function to skip fusion check when assigning a to_apply computation.	test_513905912	OPEN
+1543	[XLA:GPU] Custom kernel for small sum reductions that is intended to run faster than NCCL.	test_511497436	OPEN
+1523	[xla] Add support for output target to DynamicParameterBinding	test_503325516	OPEN
+1507	PR #59515: Cublaslt fp8 matmul restriction work-around	test_512191684	OPEN
+1506	Change some callers of execute_sharded_on_local_devices to	test_512183375	OPEN
+1500	Select the first platform that is not kInterpreter by default when more than two platforms are available.	test_511691772	OPEN
+1495	[xla:pjrt]Tfrt Cpu PjRt client that enables JAX with dynamic shapes on top of XLA CPU pipeline	test_509261215	OPEN
+1485	Add an option to configure layout assignment for transposes on GPU backend.	test_512009167	OPEN
+1481	[jax] Add mhlo DynamicParameterBinding attribute to dynamically-shaped arguments and results	test_509261214	OPEN
+1471	[PJRT C API] Add some tests for PJRT C API implementation.	test_511622469	OPEN
+1451	Add CollectiveUpdateSliceOp	test_511684582	OPEN
+1418	[NFC] Add opcode_string() to HloInstruction	test_511271516	OPEN
+1413	set the flag --experimental_link_static_libraries=true.	test_511232643	OPEN
+1399	Add interface to log errors	test_508235153	OPEN
+1381	Use std::optional instead of llvm::Optional	test_510680385	OPEN
+1375	Add missing deps.	test_508786581	OPEN
+1373	Sets the flag --experimental_link_static_libraries=true.	test_510469439	OPEN
+1372	Remove pointer to previous Python frame on Traceback frame.	test_510433787	OPEN
+1364	Remove TSL deps from XLA's third_party	test_510261846	OPEN
+1310	[CHLO] Implement EighOp and lowering to MHLO	test_509758012	OPEN
+1304	[PJRT:C] Add PJRT_Client_Defragment	test_509679147	OPEN
+1297	Replace `tensorflow::Status::SetStackTrace` with `SetStackTrace(status, trace)`, to be compatible with the `absl::Status` API.	test_509604863	OPEN
+1256	[SE] Fix compiler and correctness error in typed DeviceMemoryAllocator::Allocate.	test_508504088	OPEN
+1212	Async cp with separate send and recv done prototype	test_508493352	OPEN
+1186	Upgrade android build tools version to 31.0.0	test_507566798	OPEN
+1166	Updates Bazel version from 5.3.0 to 6.0.0	test_507983284	OPEN
+1075	[Ocean] Overlap multiple AddChunk operations	test_506386698	OPEN
+1074	[xla:gpu] Schedule Recv operation memcpy into a thread pool	test_506372886	OPEN
+1071	Try to trigger macos testing	test_506308123	OPEN
+1059	Support hardware conversions from FP8 to FP16 on Hopper.	test_500075221	OPEN
+1057	small cleanup of fuzz helper	test_506107343	OPEN
+1029	feat: Upgrade TensorFlow protobuf dependency to 3.21.9 (4.21.9 for Python)	test_505720411	OPEN
+999	Testing TSL Windows	test_505313675	OPEN
+993	[do not submit] load	test_504609226	OPEN
+963	Internal CI testing.	test_504903254	OPEN
+962	[DO NOT SUBMIT] Enable XLA:CPU-Next by default	test_504894059	OPEN
+953	Matching benchmark scripts to existing sheet and adding missing scripts.	test_504829754	OPEN
+948	[xla] Identify broadcasts that are never read and convert to CustomCall(AllocateBuffer)	test_504787934	OPEN
+941	[IFRT] Add Index/IndexDomain types and Sharding::IndexDomains()	test_503270473	OPEN
+930	use a function invocation specific/unique id for TraceMeConsumer/Producer.	test_504622016	OPEN
+925	Move thlo tiling tests out of gml_st and use upstream interface.	test_504264568	OPEN
+923	[XLA] Take advantage of moveable host callbacks and reduce the number of allocations.	test_492493844	OPEN
+922	This will allow running multi-GPU HLO modules.	test_504531000	OPEN
+904	[TF:PJRT] Use PjRtDeviceContext in XlaDevice.	test_495196900	OPEN
+890	Introduce TpuHostTransferCommand as a wrapper for the host command handler function.	test_501752015	OPEN
+881	[TF:PJRT] Move PjRtDeviceContext from next_pluggable_device folder to jit folder.	test_504081987	OPEN
+879	Shard CancellationManager (Attempt 2)	test_492048263	OPEN
+878	Make the default implementation of Log/Log2/Ln/Log1p in XLA accurate on all platforms, and tighten test tolerances accordingly. The new implementation is accurate to 2 ULP.	test_504022808	OPEN
+863	Support jax.Array as device inputs in input_utils.	test_470894111	OPEN
+846	Tighten test tolerances after fixing inaccurate log implementation.	test_503540628	OPEN
+823	replace tpu_executor_interface's namespace from tensorflow to stream_executor	test_503371784	OPEN
+822	refactor noncopyable_buffer.h's from compiler/xla/stream_executor/tpu/ to tsl/distributed_runtime	test_503320188	OPEN
+790	Internal CI Testing	test_503138766	OPEN
+775	refactor noncopyable_buffer.h's from compiler/xla/stream_executor/tpu/ to tsl/distributed_runtime	test_484330916	OPEN
+761	Copyedits for the StableHLO/XLA tutorial and rename it README.md	test_502708328	OPEN
+754	[SE] Replace SE status macros/functions with TF macros/functions.	test_502658081	OPEN
+749	Remove redundant generic bytes_accessed field from symbols.proto.	test_502607827	OPEN
+732	Remove redundant bytes_accessed field.	test_502250575	OPEN
+731	Enable fallback tf2xla legalization for the XlaSetBound op	test_502032531	OPEN
+728	Makes the internal implementation of tf_cc_shared_library as close as possible to the external version.	test_501745572	OPEN
+727	[xla:gpu] Enable CUDA Graphs by default	test_501968857	OPEN
+672	Add deduplication support for jax tpuEmbedding users.	test_501319520	OPEN
+662	[XLA:GPU] Upgrade PTX ISA version to 7.5.	test_501265054	OPEN
+618	Plumb an optional byte_strides through PJRT_Buffer_ToHostBuffer	test_500857761	OPEN
+606	[XLA:GPU] Adding jaxlib gpu_kernels as a dependency to hlo_bisect	test_499964547	OPEN
+568	Internal only change.	test_500399921	OPEN
+497	[TF:PJRT] Create a GPU PJRT client in first use.	test_494922804	OPEN
+496	Internal infrastructure change	test_497254094	OPEN
+476	[mhlo] Roundtrip device_assigment module attr	test_489282430	OPEN
+468	[StableHLO to MHLO] Improve verification of AllGather	test_497255763	OPEN
+451	Replace "copybara:comment" with "#ifdef PLATFORM_GOOGLE".	test_496960394	OPEN
+441	[XLA] Use a more numerically-stable impl of kBatchNormTraining.	test_496968705	OPEN
+438	Add tutorial to xla	test_496947791	OPEN
+401	Remove unused `tf-jitrt-symbolic-shape-optimization` pass	test_496602967	OPEN
+399	Roundtrip unbounded dimension sizes between MHLO and HLO	test_492875185	OPEN
+386	[XLA:GPU] Support convolutions in GPU AOT compilation	test_496453193	OPEN
+377	[XLA] Simplify type logic	test_496407683	OPEN
+376	[XLA:GPU] Enable HLO passes in xla_compile	test_496407222	OPEN
+374	[XLA:GPU] Enable HLO passes in xla_compile	test_496327449	OPEN
+371	[XLA:GPU] Make `TransferLiteralFromDevice` always asynchronous.	test_492452646	OPEN
+367	[XLA:GPU] Enable HLO passes in xla_compile	test_496321952	OPEN
+360	[tfrt] Print LLVM IR after each pass when running benchmarks on debug	test_495435009	OPEN
+356	[XLA:GPU] Make GpuBfloat16Support compatible with AOT compilation	test_495972488	OPEN
+354	[XLA:GPU] Make GpuBfloat16Support compatible with AOT compilation	test_496092522	OPEN
+352	[xla] Add support for output target to DynamicParameterBinding	test_496021217	OPEN
+332	Use std::nullopt instead of llvm::None	test_494329030	OPEN
+309	[StableHLO to MHLO] tuple flattening in func::returnOp	test_495697558	OPEN
+306	Update RBE configs workflow to include Python 3.11 and exclude Python 3.7	test_495674090	OPEN
+305	[JAX][XLA:GPU] Enable GPU compilation cache by default	test_495685930	OPEN
+298	Copy third_party/mkl to tsl.	test_495637365	OPEN
+288	[mhlo] Refactoring E2E test file names to mhlo_<operation>	test_495568295	OPEN
+266	replace tpu_executor_interface's namespace from tensorflow to stream_executor	test_484440561	OPEN
+262	Fix reference to ROCm	test_495389305	OPEN
+258	Fix reference to ROCm	test_495360838	OPEN
+255	Fix ROCM reference to use @local_config_rocm	test_495305948	OPEN
+207	Replace google/protobuf with @com_google_protobuf//:protobuf in XLA	test_494937144	OPEN
+154	Migrates tf_python_pybind_extension targets under //tensorflow/python to cc_shared_library.	test_477342906	OPEN
+125	xla::Shape dynamic dimension sizes should be i64 to match static dimension sizes	test_494334264	OPEN
+115	[XLA] Speed up MakeNonfusionComputations.	test_494243532	OPEN
+107	[XLA] Cleanup / optimize `PostOrderDFS`.	test_437011197	OPEN
+83	Add float8 cast ops.	test_486185011	OPEN
